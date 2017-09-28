@@ -1,6 +1,6 @@
 (* ::Package:: *)
 
-BeginPackage["ColorJones`",{NC`,NCAlgebra`,KnotTheory`}]
+BeginPackage["ColorJones`",{"NC`","NCAlgebra`","KnotTheory`"}]
 
 
 CJ::usage="To be determinded"
@@ -153,7 +153,7 @@ CEE[q_, K_, Ncrs_]:=Fold[Plus,Array[(-1)^((Length[K[[#]]])-1)*detq[q, K[[#]], Nc
 Input a braid and output a sum of simple walks *)
 
 (* Load precomputed values if possible *)
-<<"walk-model-to-compute-the-colored-jones-polynomial/simplewalks.m";
+(*<<"walk-model-to-compute-the-colored-jones-polynomial/simplewalks.m";*)
 
 SimpleWalkCalculator[Braid_Knot,NCvars_,q_]:=SimpleWalkCalculator[Array[List[Abs[BR[Braid][[2]][[#]]],Sign[BR[Braid][[2]][[#]]]]&,Length[BR[Braid][[2]]]],NCvars,q]
 
