@@ -1,0 +1,2 @@
+#!/Applications/Mathematica.app/Contents/MacOS/wolframscript -print -function -signature Integer Integer Integer
+(<<ColorJones`;NonCommutativeMultiply`SetCommutative[q];AbsoluteTiming[ColorJones`CJ[q,#1,KnotTheory`AllKnots[#2][[#3]]]])&
